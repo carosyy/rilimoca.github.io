@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RILIMOCA</title>
+
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+
+    <link rel="icon" href="Images/rilimocaWicon.png">
+
+  </head>
+  <h1>Rilimoca</h1>
+
+  <body>
+    <header>
+      <div class="HeaderLogo">
+        <div class="Logo">
+          <img
+            src="Images/rilimocaL.png"
+            alt="Logo Rilimoca"
+            title="Logo Rilimoca"
+          />
+        </div>
+        <!--<div class="Buscar">
+          <input type="search" id="BtnBuscar" placeholder="Buscar" />
+        </div>-->
+      </div>
+
+      <div class="HeaderMenu">
+        <div class="MenuOp">
+          <nav>
+            <ul class="activeNav">
+              <li>
+                <a aria-current="main"
+                href="Index.html">Inicio</a>
+              </li>
+
+              <li>
+                <a href="InfoG.html">Información General</a>
+              </li>
+
+              <li>
+                <a href="Clientes.html">Clientes</a>
+              </li>
+
+              <li>
+                <a href="Mantenimiento.html">Mantenimiento</a>
+              </li>
+
+              <li>
+                <a href="Reportes.html">Reportes</a>
+              </li>
+
+              <li>
+                <a href="Contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="slider">
+      <figure>
+        <img 
+        src="Images/AptBloqueCfront.jpg"
+        alt="Frente de Bloque C"
+        title="Frente de Bloque C"
+        >
+        <img 
+        src="Images/AptBloqueCfront2.jpg" 
+        alt="" 
+        title=""
+        >
+        <img 
+        src="Images/AptBloqueDfront.jpg" 
+        alt="" 
+        title=""
+        >
+        <img 
+        src="Images/AptBloqueDfront2.jpg" 
+        alt="" 
+        title=""
+        >
+        <img 
+        src="Images/AptBloqueBfront.jpg" 
+        alt="" 
+        title="">
+      </figure>
+    </div>
+
+    <main>
+      <article>
+        <h2>¿Quienes somos?</h2>
+
+        <p>
+          Somos una empresa ubicada en el cantón Vásquez de Coronado con cercanía a 
+           clínicas, instituciones y comercios en general.
+        </p>
+
+        <p>
+          Los apartamentos se alquilan con un concepto habitacional
+          pensado para familias o particulares. 
+          Cada apartamento cuenta con:
+          <ul class="listaQS">
+            <li>
+              Una amplia zona de sala comedor.
+            </li>
+            <li>
+              Area de cocina con su mueble.
+            </li>
+            <li>
+              Una baño completo.
+            </li>
+            <li>
+              Dos habitaciones (principal y secundario) con su respectivo closet. 
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          Cuenta con servicios públicos, zonas de jardín, parqueos, y seguridad. 
+          Así como se brinda un servicio de mantemiento y jardinería.
+        </p>
+      </article>
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    
+    <script src="Javascript/Header.js"></script>
+    <script src="Javascript/firebase.config.js"></script>
+    <script src="Javascript/infoG.js"></script>
+    <script src="Javascript/clientes.js"></script>
+    <script src="Javascript/mant.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información General</title>
+
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+    <link rel="icon" href="Images/rilimocaWicon.png" />
+    
+    </head>
+
+  <body>
+    <header>
+      <div class="HeaderLogo">
+        <div class="Logo">
+          <img
+            src="Images/rilimocaL.png"
+            alt="Logo Rilimoca"
+            title="Logo Rilimoca"
+          />
+        </div>
+        <div class="Buscar">
+          <input type="search" id="BtnBuscar" placeholder="Buscar" />
+        </div>
+      </div>
+
+      <div class="HeaderMenu">
+        <div class="MenuOp">
+          <nav>
+            <ul class="activeNav">
+              <li>
+                <a aria-current="main"
+                href="Index.html">Inicio</a>
+              </li>
+
+              <li>
+                <a href="InfoG.html">Información General</a>
+              </li>
+
+              <li>
+                <a href="Clientes.html">Clientes</a>
+              </li>
+
+              <li>
+                <a href="Mantenimiento.html">Mantenimiento</a>
+              </li>
+
+              <li>
+                <a href="Reportes.html">Reportes</a>
+              </li>
+
+              <li>
+                <a href="Contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <!--------------------FORMULARIO -------------------->
+  <div class="ContDivs">
+    <section class="Info">
+
+      <form id="FinformG">
+        <fieldset>
+          <legend class="legendIG">Información General</legend>
+        
+        <div class="FormCont">
+          
+          <div class="F_txt1">   
+            <label for="tipoApt">Tipo de Apartamento:</label>
+            <input name="tipoApt" id="tipoApt" list="tipoApart" required/>
+              <datalist id="tipoApart">
+                <option value="Apt">Apartamento</option>
+                <option value="Cs">Casa</option>
+              </datalist>
+          </div>
+
+          <br />
+
+          <div class="F_txt2">
+            <label for="BloqueApt">Bloque:</label>
+            <input name="BloqueApt" id="BloqueApt" type="text" placeholder="Ejemplo: 'A', 'B', 'C', 'D'" required /> 
+          </div>
+
+          <br>
+
+          <div class="F_txt3">
+            <label for="UbicacionApt">Ubicación:</label>
+          </div>
+
+          <br>
+
+          <div class="F_txt4">
+            <label for="UbicacionApt">Cantón:</label>
+            <input name="UbicacionApt" id="CantonApt" type="text" placeholder="Ingrese el Cantón" required /> 
+          </div>
+
+          <br>
+          
+          <div class="F_txt5">
+            <label for="UbicacionApt">Distrito:</label>
+            <input name="UbicacionApt" id="DistritoApt" type="text" placeholder="Ingrese el Distrito" required /> 
+          </div>
+
+          <br>
+          
+          <div class="F_txt6">
+            <label for="ProvinciaApt">Provincia:</label>
+            <input name="ProvinciaApt" id="ProvinciaApt" list="ProvApart"/>
+              <datalist id="ProvApart">
+                <option value="SJ" selected> San José</option>
+                <option value="C">Cartago</option>
+                <option value="H">Heredia</option>
+                <option value="A">Alajuela</option>
+                <option value="L">Limón</option>
+                <option value="P">Puntarenas</option>
+                <option value="G">Guanacaste</option>
+              </datalist>
+          </div>
+
+          <br>
+
+          <div class="F_txt8">
+            <label for="DireccionExacta">Direccion Exacta:</label>
+            <textarea name="DireccionExacta" id="DireccionExacta" cols="30" rows="10">
+            </textarea>
+          </div>
+
+          <br>
+
+          <div class="F_txt9">
+            <label for="NumFinca">Número de Finca/Folio Real:</label>
+            <input name="NumFinca" id="NumFinca" type="text" placeholder="Ingrese el Numero de Finca" min="12" max="12" required /> 
+          </div>
+
+          <br>
+        
+          <div class="F_txt10">
+            <label for="CantUnidades">Cantidad de Unidades:</label>
+            <input name="CantUn" id="CantUn" type="number" min="0" max="100" required/>
+          </div>
+           
+          <br>
+
+          <div class="F_txt11">
+            <label for="NumServicioLuz">Número de Servicio Luz (NISE):</label>
+            <input name="NumServicioLuz" id="NumServicioLuz" type="text" placeholder="Ingrese el Numero de NISE" min="6" max="6" required /> 
+          </div>
+          
+          <br>
+
+          <div class="F_txt12">
+            <label for="NumServicioAgua">Número de Servicio de Agua (NIS):</label>
+            <input name="NumServicioAgua" id="NumServicioAgua" type="text" placeholder="Ingrese el Numero de NIS" required /> 
+          </div>
+          
+          <br>
+
+          <div class="F_txt13">
+            <label for="FechaConstru">Fecha de Construcción:</label>
+            <input name="FechaConstru" id="FechaConstru" type="date" required /> 
+          </div>
+          
+          <br>
+        </div>
+
+        </fieldset>
+
+        <div class="F_btns">
+          <div class="FIG_Enviarbtn">
+            <button id="EnviarFIGbtn" name="EnviarFIGbtn">
+              Guardar
+            </button>
+          </div>
+          <div class="FIG_Resetbtn">
+            <button type="button" id="ResetFIGbtn" name="ResetFIGbtn" onclick="limpiar()">
+              Limpiar
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+    </section>
+
+    <!---------------------TABLA-------------------->
+
+    <section class="InfoGuardada">
+
+      <div class="IG_tabla">
+        <table id="tblInfoG"> 
+          <thead> 
+              <th rowspan="2">Tipo</th>
+              <th rowspan="2">Bloque</th>
+              <th colspan="3">Ubicación</th>
+              <th rowspan="2">Dirección Exacta</th>
+              <th rowspan="2"># de Finca</th>
+              <th rowspan="2">Unidades</th>
+              <th rowspan="2">NISE</th>
+              <th rowspan="2">NIS</th>
+              <th rowspan="2">Fecha de Construcción</th>
+              <th rowspan="2"></th>
+              <tr>
+                <th>Cantón</th>
+                <th>Distrito</th>
+                <th>Provincia</th>
+              </tr>
+          </thead>
+          <tbody> 
+            <!--<tr> 
+              <td>Elem1</td> 
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+            </tr>
+            <tr>
+              <td>Elem2</td> 
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+            </tr>
+            <tr>
+              <td>Elem3</td> 
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+            </tr>-->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!--SCRIPTS-->
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+  
+  <script src="Javascript/Header.js"></script>
+  <script src="Javascript/firebase.config.js"></script>
+  <script src="Javascript/infoG.js"></script>
+
+  </body>
+</html>

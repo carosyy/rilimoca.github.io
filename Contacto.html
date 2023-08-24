@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+    <link rel="icon" href="Images/rilimocaWicon.png" />
+  </head>
+  <body>
+    <h1>Contactos</h1>
+    <header>
+      <div class="HeaderLogo">
+        <div class="Logo">
+          <img
+            src="Images/rilimocaL.png"
+            alt="Logo Rilimoca"
+            title="Logo Rilimoca"
+          />
+        </div>
+        <div class="Buscar">
+          <input type="search" id="BtnBuscar" placeholder="Buscar" />
+        </div>
+      </div>
+
+      <div class="HeaderMenu">
+        <div class="MenuOp">
+          <nav>
+            <ul class="activeNav">
+              <li>
+                <a aria-current="main"
+                href="Index.html">Inicio</a>
+              </li>
+
+              <li>
+                <a href="InfoG.html">Información General</a>
+              </li>
+
+              <li>
+                <a href="Clientes.html">Clientes</a>
+              </li>
+
+              <li>
+                <a href="Mantenimiento.html">Mantenimiento</a>
+              </li>
+
+              <li>
+                <a href="Reportes.html">Reportes</a>
+              </li>
+
+              <li>
+                <a href="Contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="InfoContacto">
+      <div class="Cartas">
+        <img src="Images/mail.png" class="Iconos">
+        <p>
+          ricmora2004@yahoo.com.mx
+        </p>
+        <br>
+        <p>
+          lillianajim@gmail.com
+        </p>
+      </div>
+      
+      <div class="Cartas">
+        <img src="Images/telephone.png" class="Iconos">
+        <p>
+          +506 8859 3537
+        </p>
+        <br>
+        <p>
+          +506 8395 0290
+        </p>
+      </div>
+      
+      <div class="Cartas">
+        <img src="Images/pin.png" class="Iconos">
+        <p>
+          Vásquez de Coronado San Isidro. 
+        </p>
+        <br>
+        <p>
+          De la Gasolinera El Trapiche 25 sur 25 oeste y 100 sur
+        </p>
+      </div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    
+    <script src="Javascript/Header.js"></script>
+    <script src="Javascript/firebase.config.js"></script>
+    <script src="Javascript/infoG.js"></script>
+    <script src="Javascript/clientes.js"></script>
+    <script src="Javascript/mant.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+  </body>
+</html>

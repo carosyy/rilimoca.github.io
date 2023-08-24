@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mantenimiento</title>
+
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+    <link rel="icon" href="Images/rilimocaWicon.png" />
+    
+  </head>
+
+  <body>
+    <header>
+      <div class="HeaderLogo">
+        <div class="Logo">
+          <img
+            src="Images/rilimocaL.png"
+            alt="Logo Rilimoca"
+            title="Logo Rilimoca"
+          />
+        </div>
+        <div class="Buscar">
+          <input type="search" id="BtnBuscar" placeholder="Buscar" />
+        </div>
+      </div>
+
+      <div class="HeaderMenu">
+        <div class="MenuOp">
+          <nav>
+            <ul class="activeNav">
+              <li>
+                <a aria-current="main"
+                href="Index.html">Inicio</a>
+              </li>
+
+              <li>
+                <a href="InfoG.html">Información General</a>
+              </li>
+
+              <li>
+                <a href="Clientes.html">Clientes</a>
+              </li>
+
+              <li>
+                <a href="Mantenimiento.html">Mantenimiento</a>
+              </li>
+
+              <li>
+                <a href="Reportes.html">Reportes</a>
+              </li>
+
+              <li>
+                <a href="Contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--------------------FORMULARIO -------------------->
+    <div class="ContDivs">
+      <section class="Info">
+  
+        <form id="FMant">
+          <fieldset>
+            <legend class="legendIG">Mantenimiento</legend>
+          
+          <div class="FormCont">
+            
+            <div class="F_txt1">   
+              <label for="tipoMant">Tipo de Mantenimiento:</label>
+              <input name="tipoMant" id="tipoMant" list="MantL"/>
+                <datalist id="MantL">
+                  <option value="Pintura de Techos" selected></option>
+                  <option value= "Limpieza de Tanque Séptico"></option>
+                  <option value="Pintura Interna"></option>
+                  <option value="Limpieza de Cajas de Registro"></option>
+                  <option value="Limpieza de Canoas"></option>
+                  <option value="Limpieza Tanques de Agua potable"></option>
+                  <option value="Pintura Portones"></option>
+                  <option value="Pintura Parqueos"></option>
+                  <option value="Impermeabilización de paredes"></option>
+                  <option value="Mantenimiento Motores portones"></option>
+                </datalist>
+            </div>
+  
+            <br />
+  
+            <div class="F_txt2">
+              <label for="FechaMant">Fecha:</label>
+              <input name="FechaMant" id="FechaMant" type="date" required /> 
+            </div>
+  
+            <br>
+  
+            <div class="F_txt3">
+              <label for="CostoMant"> Costo:</label>
+              <input name="CostoMant" id="CostoMant" type="number" placeholder="Ej. 250000" required /> 
+            </div>
+  
+            <br>
+  
+            <div class="F_txt4">
+              <label for="ProveedorMant">Proveedor:</label>
+              <input name="ProveedorMant" id="ProveedorMant" type="text" placeholder="Ingrese el proveedor" required /> 
+            </div>
+  
+            <br>
+            
+            <div class="F_txt5">
+              <label for="TelMant">Teléfono:</label>
+              <input name="TelMant" id="TelMant" type="text" placeholder="Ej: 1234-1234" required /> 
+          </div>
+  
+            <br>
+            
+            <label for="NotasMant"> Notas:</label>
+
+            <br>
+  
+            <div class="F_txt8">
+              <textarea name="NotasMant" id="NotasMant" cols="30" rows="10">
+              </textarea>
+            </div>
+  
+            <br>
+
+          </div>
+  
+          </fieldset>
+  
+          <div class="F_btns">
+            <div class="FM_Enviarbtn">
+              <button id="EnviarFbtn" name="EnviarFbtn" samesite = strict>
+                Guardar
+              </button>
+            </div>
+            <div class="FM_Resetbtn">
+              <button type="button" id="ResetFbtn" name="ResetFbtn" onclick="limpiar()">
+                Limpiar
+              </button>
+            </div>
+          </div>
+  
+        </form>
+  
+      </section>
+  
+      <!---------------------TABLA-------------------->
+  
+      <section class="InfoGuardada">
+  
+        <div class="IG_tabla">
+          <table id="tblMant"> 
+            <thead> 
+                <th>Tipo de Mantenimiento</th>
+                <th>Fecha</th>
+                <th>Costo</th>
+                <th>Proveedor</th>
+                <th>Teléfono</th>
+                <th>Notas</th>
+                <th></th>
+            </thead>
+            <tbody> 
+              <!--<tr> 
+                <td>Elem1</td> 
+                <td>Elem1</td>
+                <td>Elem1</td>
+                <td>Elem1</td>
+                <td>Elem1</td>
+                <td>Elem1</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Elem2</td> 
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+                <td>Elem2</td>
+              </tr>
+              <tr>
+                <td>Elem3</td> 
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+                <td>Elem3</td>
+              </tr>-->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+  <!--SCRIPTS-->
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+  <script src="Javascript/Header.js"></script>
+  <script src="Javascript/firebase.config.js"></script>
+  <script src="Javascript/mant.js"></script>
+
+  </body>
+</html>

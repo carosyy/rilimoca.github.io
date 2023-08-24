@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clientes</title>
+
+    <link rel="stylesheet" href="CSS/Estilos.css" />
+    <link rel="icon" href="Images/rilimocaWicon.png" />
+
+  </head>
+
+  <body>
+    <header>
+      <div class="HeaderLogo">
+        <div class="Logo">
+          <img
+            src="Images/rilimocaL.png"
+            alt="Logo Rilimoca"
+            title="Logo Rilimoca"
+          />
+        </div>
+        <div class="Buscar">
+          <input type="search" id="BtnBuscar" placeholder="Buscar" />
+        </div>
+      </div>
+
+      <div class="HeaderMenu">
+        <div class="MenuOp">
+          <nav>
+            <ul class="activeNav">
+              <li>
+                <a aria-current="main"
+                href="Index.html">Inicio</a>
+              </li>
+
+              <li>
+                <a href="InfoG.html">Información General</a>
+              </li>
+
+              <li>
+                <a href="Clientes.html">Clientes</a>
+              </li>
+
+              <li>
+                <a href="Mantenimiento.html">Mantenimiento</a>
+              </li>
+
+              <li>
+                <a href="Reportes.html">Reportes</a>
+              </li>
+
+              <li>
+                <a href="Contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--------------------FORMULARIO -------------------->
+  <div class="ContDivs">
+    <section class="Info">
+
+      <form id="FClientes">
+        <fieldset>
+          <legend class="legendIG">Clientes</legend>
+        
+        <div class="FormCont">
+          
+          <div class="F_txt1">   
+            <label for="NombreCliente">Nombre Completo:</label>
+            <input name="NombreCliente" id="NombreCliente" type="text" placeholder="Nombre" required /> 
+          </div>
+
+          <br />
+
+          <div class="F_txt2">
+            <label for="CedulaCliente">Cédula:</label>
+            <input name="CedulaCliente" id="CedulaCliente" type="number" placeholder="Ej: 01  2345 6789" required /> 
+          </div>
+
+          <br>
+
+          <div class="F_txt3">
+            <label for="NacionCliente">Nacionalidad:</label>
+            <input name="NacionCliente" id="NacionCliente" type="text" placeholder="Ingrese la nacionalidad" required /> 
+          </div>
+
+          <br>
+
+          <div class="F_txt4">
+            <label for="TelCliente">Teléfono:</label>
+            <input name="TelCliente" id="TelCliente" type="text" placeholder="Ej: 1234-1234" required /> 
+          </div>
+
+          <br>
+          
+          <div class="F_txt5">
+            <label for="NumAptCliente">Número de Apartamento:</label>
+            <input name="NumAptCliente" id="NumAptCliente" type="text" placeholder="Ej. A1, A2, A3" required /> 
+          </div>
+
+          <br>
+          
+          <div class="F_txt6">
+            <label for="FechaContraCliente">Fecha de inicio de Contrato:</label>
+            <input name="FechaContraCliente" id="FechaContraCliente" type="date" required /> 
+          </div>
+
+          <br>
+
+          <div class="F_txt6">
+            <label for="FechaFContraCliente">Fecha de finalización de Contrato:</label>
+            <input name="FechaFContraCliente" id="FechaFContraCliente" type="date" required /> 
+          </div>
+
+          <br>
+
+          <div class="F_txt9">
+            <label for="RenovAlqCliente">Renovación Alquiler:</label>
+            <input name="RenovAlqCliente" id="RenovAlqCliente" type="number" min="0" max="100" placeholder="Ej. 3 años" required/>
+          </div>
+
+          <br>
+        
+          <div class="F_txt10">
+            <label for="MontoAlqCliente">Monto de Alquiler:</label>
+            <input name="MontoAlqCliente" id="MontoAlqCliente" type="number" placeholder="Ej. 250000" required /> 
+          </div>
+           
+          <br>
+
+          <div class="F_txt11">
+            <label for="MontoAlqAuCliente">Monto de Aumento Alquiler:</label>
+            <input name="MontoAlqAuCliente" id="MontoAlqAuCliente" type="number" placeholder="Ej. 250000" required /> 
+          </div>
+          
+          <br>
+
+          <div class="F_txt12">
+            <label for="UltAuCliente">Último Aumento:</label>
+            <input name="UltAuCliente" id="UltAuCliente" type="date" required /> 
+          </div>
+          
+          <br>
+
+          <div class="F_txt13">
+            <label for="PUltAuCliente">Próximo aumento de alquiler:</label>
+            <input name="PUltAuCliente" id="PUltAuCliente" type="date" required /> 
+          </div>
+          
+          <br>
+
+          <div class="F_txt14">
+            <label for="DocCliente">Documentos adjuntos:</label>
+            <input name="DocCliente" id="DocCliente" type="file" placeholder="Inserte el contrato" /> 
+          </div>
+
+          <br>
+
+          <div class="F_txt15">
+            <label for="CedEscCliente">Cédulas escaneados:</label>
+            <input name="CedEscCliente" id="CedEscCliente" type="file" placeholder="Inserte el contrato"/> 
+          </div>
+
+          <br>
+
+          <div class="F_txt16">
+            <label for="CorreoCliente">Correo electrónico:</label>
+            <input type="text" name="CorreoCliente" id="CorreoCliente" placeholder="Ej. correo@dominio.com" class="form-control" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" title="Ingrese un correo valido" required>
+          </div>
+
+          <br>
+
+          <div class="F_txt17">
+            <label for="FechaDevCliente"> Fecha de Devolución del Apartamento:</label>
+            <input name="FechaDevCliente" id="FechaDevCliente" type="date" required /> 
+          </div>
+        </div>
+
+        </fieldset>
+
+        <div class="F_btns">
+          <div class="FC_Enviarbtn">
+            <button id="EnviarFCbtn" name="EnviarFCbtn">
+              Guardar
+            </button>
+          </div>
+          <div class="FC_Resetbtn">
+            <button type="button" id="ResetFCbtn" name="ResetFCbtn" onclick="limpiar()">
+              Limpiar
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+    <!---------------------TABLA-------------------->
+
+    <section class="InfoClientes">
+
+      <div class="C_tabla">
+        <table id="tblCliente"> 
+          <thead> 
+              <th>Nombre</th>
+              <th>Cédula</th>
+              <th>Nacionalidad</th>
+              <th>Teléfono</th>
+              <th># Apartamento</th>
+              <th>Inicio de Contrato</th>
+              <th>Finalización de Contrato</th>
+              <th>Renovación Alquiler</th>
+              <th>Monto de Alquiler</th>
+              <th>Monto de Aumento Alquiler</th>
+              <th>Último Aumento</th>
+              <th>Próximo aumento</th>
+              <th>Documentos adjuntos</th>
+              <th>Cédulas escaneados</th>
+              <th>Correo</th>
+              <th>Fecha de Devolución</th>
+              <th></th>
+          </thead>
+
+          <tbody> 
+            <!--<tr>
+              <td>Elem1</td> 
+              <td>Elem1</td>
+              <td>Elem1</td> 
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+              <td>Elem1</td>
+            </tr>
+            <tr>
+              <td>Elem2</td> 
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+              <td>Elem2</td>
+            </tr>
+            <tr>
+              <td>Elem3</td> 
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+              <td>Elem3</td>
+            </tr>-->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!--SCRIPTS-->
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+  
+  <script src="Javascript/Header.js"></script>
+  <script src="Javascript/firebase.config.js"></script>
+  <script src="Javascript/clientes.js"></script>
+  </body>
+</html>
